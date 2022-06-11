@@ -1,5 +1,7 @@
 <template>
-    
+    <div class="d-flex justify-center">
+        hello world
+    </div>
 </template>
 
 <script>
