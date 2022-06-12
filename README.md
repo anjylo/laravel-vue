@@ -2,7 +2,7 @@
 
 ## Laravel - Vue 
 
-Simple scafolding for laravel and vue. 
+Simple scafolding for laravel with vue.js  
 
 ## Setup Requirements
 
@@ -39,4 +39,5 @@ npm run watch
 ### Additional Plugins and packages included. 
 
 - Vue Router
+- Vuex
 - Vuetify
