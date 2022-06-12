@@ -17,9 +17,26 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   mounted: function mounted() {
-    console.log('mounted');
+    this.$store.dispatch('user/setName', 'jon doe');
+    this.$store.dispatch('user/setEmail', 'jondoe@mail.com');
   }
 });
 
@@ -109,9 +126,49 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "d-flex justify-center" }, [
-    _vm._v("\n    hello world\n"),
-  ])
+  return _c(
+    "v-row",
+    { attrs: { justify: "center" } },
+    [
+      _c("v-col", { staticClass: "d-flex justify-center align-center" }, [
+        _c("div", [
+          _c("p", { staticClass: "mb-0" }, [
+            _vm._v(
+              _vm._s("Hello, " + _vm.$store.getters["user/getName"] + " here.")
+            ),
+          ]),
+          _vm._v(" "),
+          _c(
+            "p",
+            { staticClass: "mb-0" },
+            [
+              _vm._v(
+                "\n                " +
+                  _vm._s("Contact me at") +
+                  "\n                "
+              ),
+              _c(
+                "v-btn",
+                {
+                  staticClass: "text-none",
+                  attrs: { text: "", small: "", plain: "", color: "primary" },
+                },
+                [
+                  _vm._v(
+                    "\n                    " +
+                      _vm._s(_vm.$store.getters["user/getEmail"]) +
+                      "\n                "
+                  ),
+                ]
+              ),
+            ],
+            1
+          ),
+        ]),
+      ]),
+    ],
+    1
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
