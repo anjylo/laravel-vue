@@ -2,7 +2,7 @@
 
 ## Laravel - Vue 
 
-Simple scafolding for laravel with vue.js  
+Simple scaffolding for laravel with vue.js  
 
 ## Setup Requirements
 
