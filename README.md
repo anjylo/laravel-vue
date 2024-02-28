@@ -19,7 +19,7 @@ git clone https://github.com/anjylo/laravel-vue.git
 ### Install Dependencies
 
 ```bash
-npm install
+npm ci
 
 composer install
 ```
